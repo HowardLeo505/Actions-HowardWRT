@@ -1,14 +1,14 @@
 #
-# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
+# Copyright (c) 2022 HowardLeo505
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-# https://github.com/P3TERX/Actions-OpenWrt
+# https://github.com/HowardLeo505/Actions-HowardWrt
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build HowardWrt
 
 on:
   repository_dispatch:
@@ -30,12 +30,12 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: false
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
