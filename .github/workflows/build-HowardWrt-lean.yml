@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build HowardWrt
+name: Build HowardWrt-Lean
 
 on:
   repository_dispatch:
